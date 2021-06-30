@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Asset Performance Management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
+    <link rel = "icon" href = "images/logo1.jpg" type = "image/x-icon"> 
+    <script src="https://kit.fontawesome.com/0a44410d99.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel = "stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container" style="margin-left: -15px;">
+        <div class="sidemenu">
+            <ul>
+                <li style="border-top-right-radius: 25px;"><a href="#homescreen"><i class="fas fa-home" style="color: black;"></i> &nbsp;&nbsp;Home</a></li>
+                <li><a href="#intro"><i class="fas fa-bookmark" style="color: black;"></i> &nbsp;&nbsp;&nbsp;&nbsp;Intro</a></li>
+                <li><a href="#apm"><i class="fas fa-tachometer-alt" style="color: black;"></i> &nbsp;&nbsp;&nbsp;Asset Performance Management</a></li>
+                <li><a href="#heat"><i class="fas fa-industry" style="color: black;"></i> &nbsp;&nbsp;&nbsp;Heat Exchanger</a></li>
+                <li><a href="#mindmap"><i class="fas fa-layer-group" style="color: black;"></i> &nbsp;&nbsp;&nbsp;Mind Mapping</a></li>  
+                <li><a href="#process"><i class="fas fa-map-signs" style="color: black;"></i> &nbsp;&nbsp;&nbsp;Process</a></li>
+                <li><a href="#dataset"><i class="fas fa-database" style="color: black;"></i> &nbsp;&nbsp;&nbsp;Dataset Generation</a></li>
+                <li><a href="#ml"><i class="fas fa-brain" style="color: black;"></i> &nbsp;&nbsp;Machine Learning For APM</a></li> 
+                <li><a href="#code"><i class="fas fa-code" style="color: black;"></i> &nbsp;&nbsp;PHP ML Code</a></li>
+                <li style="border-bottom-right-radius: 25px;"><a href="#visual"><i class="fas fa-eye" style="color: black;"></i> &nbsp;&nbsp;Data Visualization</a></li>
+            </ul>   
+        </div>
+    <div class="homescreen" id="homescreen">
+       <img src="images/apm1.jpg">
+    </div>
+    <div class="overlay">
+        <img src="images/logo1.jpg" id="logo">
+        <h1>Machine Learning Model </br>For Asset Performance Management In PHP</h1>
+        <img src="images/myphoto1.jpg" id="myphoto">
+        <p>Hey folks!! Welcome to my personal blog. My name is Prathamesh Varhadpande. 
+            I am a 3rd year Computer Science Undergraduate Student. In this blog I will be discussing about a ML model for 
+        Asset Performance Management using PHP.</p>
+        <a href="https://www.instagram.com/prathamesh.varhadpande/?hl=en"><img src="images/instagram.png" id="insta"></a>
+        <a href="https://www.linkedin.com/in/prathamesh-varhadpande-b23711173"><img src="images/linkedIn.png" id="linked"></a>
+        <a href="mailto:prvarhadpande@gmail.com"><img src="images/gmail.png" id="gmail"></a>
+        <a href="https://github.com/PrathameshVarhadpande/Machine-Learning-Model-For-Asset-Performance-Management-in-PHP"><img src="images/github1.png" id="gh"></a>
+    </div>
+    
+    <div class="intro" id="intro">
+        <h1>Intro...</Intro></h1>
+        <p id="p1"><b>Yes! You heard it right the first time… A machine learning model that too in PHP.
+         Now you must have wondered why I have chosen PHP and not Python where the world is going 
+         crazy behind it for implementing Machine Learning, Data Science models, Artificial Intelligence 
+         and what not… But wait a minute can we even implement a machine learning model in PHP? The answer is big yes.</b></p>
+         <p id="p2"><b>There are excellent libraries available in PHP which are used for implementing Machine Learning viz.
+              PHP-ML, Rubix-ML, PHP-AI, etc. and some of the libraries are still under the development phase.</b></p>
+         <p id="p3"><b>In this blog I will be focusing on the Rubix ML library.</b></p>
+         <p id="p4"><b>Now coming back to our project, we are going to build an Asset Performance Management ML model.
+              Now, you might wonder why I have chosen this topic? The reason is, I participated in the 
+              Smart India Hackathon which is organized by Govt. of India. In this Hackathon I was assigned 
+              with the problem statement regarding the Asset Performance Management in Oil and Gas Industries.
+               But the cherry on the cake was… my proposed solution stood finalist in this Hackathon.</b></p>
+         <p id="p5"><b>So, grab a seat and let’s have a deep dive in this ML model. But before starting the 
+             technical details let us first understand, What Asset Performance Management is?</b></p>
+    </div>
+    <div class="apm" id="apm">
+        <h1>Asset Performance Management</h1>
+        <p id="p1"><b>Asset Performance Management (APM) in case of software are the systems that act to improve the reliability and 
+            availability of physical assets while minimizing risk and operating costs. APM typically includes predictive 
+            maintenance, condition monitoring of assets, reducing the unplanned downtime often using technologies such as 
+            data collection, visualizing the data and showing the analytics related with it.</b></p>
+        <p id="p2"><b>Basically, the equipment’s used for storage, controlling flow, containing chemical reactions, refining 
+            and processing are known as Process Plants Equipment’s. In our case, we are dealing with the Oil and Gas
+             Industry where typical Process Plant Equipment’s may be Heat Exchanger, Turbines, Coolant equipment,
+              Gas Compressors, Pumps, Mixers, Storage Tanks, etc. Mainly the equipment’s are classified into two 
+              categories: 1. High Risk Equipment’s (Mostly Rotating Equipment’s) and Low Risk Equipment’s (Mostly Fixed Equipment’s).</b></p>
+        <p id="p3"><b>In this blog I will be focusing on only one asset which is Heat Exchanger which can be classified as High-Risk Equipment.</b></p>
+        <p id="p4"><b>Okay folks, now before moving towards Dataset part first let us understand, What Heat Exchanger actually is?</b></p>
+    </div>
+    <div class="heat" id="heat">
+        <h1>Heat Exchanger</h1>
+        <p id="p1"><b>Heat Exchanger is a process plant equipment that is specially designed for heat transfer between different media.
+             One medium is process fluid and the other is a heat-absorbing coolant comprised of chilled liquid or gas.
+              Heat exchangers function by bringing a cooled fluid into close contact with a hot industrial process or piece of equipment.
+               This allows for an exchange of the heat between the two mediums by using the principles of thermal heat conduction.</b></p>
+        <img src="images/heat.jpg">
+        <p id="p2"><b>Now let’s study about the parameters of Heat Exchanger so that we can generate our Dataset.</b></p>
+        <p id="p3"><b>#Parameters –</b></p>
+        <ol type="1">
+            <li>Flow Rate of Fluid (Q) – It is the amount of fluid (in liters) flowing per minute through the Heat Exchanger.</li>
+            <li>Pressure at Cold Inlet (P1) in kg/cm^2.</li>
+            <li>Pressure at Hot Inlet (P2) in kg/cm^2.</li>
+            <li>Cold Fluid Pressure Drop (PCD) in (mm of HG).</li>
+            <li>Hot Fluid Pressure Drop (PHD) in (mm of HG).</li>
+            <li>Cold Fluid Inlet Temperature (T1(k)).</li>
+            <li>Cold Fluid Outlet Temperature (T2(k)).</li>
+            <li>Hot Fluid Inlet Temperature (T3(k)).</li>
+            <li>Hot Fluid Outlet Temperature (T4(k)). </li>
+        </ol>
+        <p id="p4"><b>Based on the above parameters we will generate our analytics.</b></p>
+        <p id="p5"><b> So now we know what Heat Exchanger is and how it works. Now let’s have a mind mapping of our ML model
+            for better understanding... </b></p>
+    </div>
+    <div class="mindmap" id="mindmap">
+        <h1>Mind-Mapping</h1>
+        <iframe style="border:5px solid" width="800" height="450" src="https://whimsical.com/embed/51NjSYNwYBGNFtEXkda38Z@2Ux7TurymMjpnGLt89XZ"></iframe>
+    </div>
+    <div class="process" id="process">
+        <h1>Process...</h1>
+        <p id="p1"><b>Now let's study about the process we are going to follow while building our ML model...</b></p>
+        <img src="images/process.jpg">
+        <p id="p2"><b>So, now you must have understood what process we are going to follow for our ML model. Now let’s dive into the generation of Dataset...</b></p>
+    </div> 
+    <div class="dataset" id="dataset">
+        <h1>Dataset Generation...</h1>
+        <p id="p1"><b>Now you might wonder, how we are going to generate the Dataset since all the Assets used in the Process Plant Equipment’s 
+            are the mechanical assets and not the software one.</b></p>
+        <p id="p2"><b>Here the idea is to connect the IoT devices to the machinery which will measure the parameters of that equipment and 
+            correspondingly send the generated data to the APM system which will predict the behavior and condition of that equipment.</b></p>
+        <p id="p3"><b>Since due to Covid19 condition we all were in lockdown, I could not arrange for IoT devices which were going to generate 
+            the data. But don’t worry folks there is another way we can generate Dataset for our ML model.</b></p>
+        <p id="p4"><b>We can use the already generated Data from the machinery and then we can hardcode it into our ML model. For the Dataset 
+            I searched for few Research Papers onto the internet…upon searching I found one research paper published on Elsevier.com 
+            which talks about the performance measurement of Heat Exchanger. In this research paper they have already generated and 
+            verified the Dataset for Heat Exchanger. So, I decided to use this Dataset for our ML model. The link for research paper 
+            is given below, you can refer this paper about how they have generated the dataset for heat exchanger:</br></br>
+            <a href="https://www.researchgate.net/publication/305382202_Performance_measurement_of_plate_fin_heat_exchanger_by_
+            exploration_ANN_ANFIS_GA_and_SA" style="text-decoration: none;margin-left: 340px;color:green;padding: 10px;background-color: white;border: 5px solid black;border-radius: 30px;">
+            Research Paper from Elsevier for Heat Exchanger Efficiency</a></b></p>
+        <p id="p5"><b>Now let’s have a look on our Dataset for asset efficiency…</b></p>
+        <img src="images/eff1.jpg" id="img1">
+        <p id="p6"><b>We can clearly see that all the parameters of heat exchanger which we discussed earlier in this blog are present in
+            this dataset along with the Efficiency of Heat Exchanger for a particular data record in the dataset. Our dataset consists of 
+            approximately 2000+ records. Having a large dataset is always a plus point while training a ML model.</b></p>
+        <p id="p7"><b>But now we need two more datasets i.e. for Reliability of Heat Exchanger and Working Status of Heat Exchanger. 
+            Since we are going for hardcode method we manually need to generate the dataset.</b></p>
+        <p id="p8"><b>The Heat Exchanger dataset which we collected, the efficiency of the Heat Exchanger is mentioned in the last column 
+            so using these values we labeled the dataset for Efficiency, Reliability and Working Status which is classified as:</b></p>
+        <p id="p9"><b>For Efficiency - </br></br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L_Efficiency - 85-90% 
+         &nbsp;&nbsp;&nbsp;&nbsp;  M_Efficiency - 90-95%  &nbsp;&nbsp;&nbsp;&nbsp;   H_Efficiency - 95% and above </br></br>
+         &nbsp;&nbsp;&nbsp;&nbsp; For Reliability - </br></br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L_Reliable- 85-90%  &nbsp;&nbsp;&nbsp;&nbsp;  M_Reliable- 90-95% &nbsp;&nbsp;&nbsp;&nbsp;  H_Reliable - 95% and above </br></br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For Status - </br></br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L_Stable - 85-95%  &nbsp;&nbsp;  H_Stable - 95% and above
+            </b></p>
+        <p id="p10"><b>Now, let’s have a look at all three datasets where I have labeled the output column (marked in red).</b></p>
+        <p id="head1">Efficiency Dataset –</p>
+        <img src="images/eff2.jpg" id="img2">
+        <p id="head2">Reliability Dataset –</p>
+        <img src="images/reli.jpg" id="img3">
+        <p id="head3">Working Status Dataset -</p>
+        <img src="images/stable.jpg" id="img4">
+        <p id="p11"><b>*Note - All the Datasets are in Excel format we need to convert it into CSV (Comma Separated Value) format.</b></p>
+        <p id="p12"><b>So, the next step is to split the Dataset into Training Dataset and Testing Dataset. While working with the algorithm 
+            we will split the dataset into training dataset and testing dataset by using split method.   </b></p>
+        <p id="p13"><b>We will use the 70%-30% rule for splitting the dataset. After splitting the dataset 70% of the dataset will be used 
+            for the Training purpose and 30% of the dataset will be used for the Testing purpose. So, our training dataset consists of 
+            approximately 1400+ data records and testing dataset consists of 600+ data records.</b></p>
+        <p id="p14"><b>So now we are clear and done with the dataset generation part. Now we will move towards the Machine Learning part of 
+            our project.</b></p>
+    </div>
+    <div class="ml" id="ml">
+        <h1>Machine Learning for Asset Performance Management</h1>
+        <p id="p1"><b>For Asset Performance Management I have chosen Supervised Machine Learning Technique. </b></p>
+        <p id="p2"><b>For those who don’t know what Supervised Machine Learning is…let me explain it in short. Supervised Machine 
+            Learning is when the model is getting trained on a labeled dataset. Labeled dataset is one which have both input and output 
+            parameters.</b></p>
+        <p id="p3"><b>In this type of learning both training and validation datasets are labeled, as shown in the figures below. The red 
+            color box is the output parameter from the dataset. While remaining parameters will be considered as input parameters.</b></p>
+        <img src="images/eff2.jpg" id="img1">
+        <p id="p4"><b>I have chosen Supervised Machine Learning technique reason being the dataset. Since we are using the Labeled 
+            dataset it is apt to use the Supervised Machine Learning for APM.</b></p>
+        <p id="p5"><b>As discussed earlier, I am going to use the Rubix-ML Library for implementing Machine Learning in PHP. So, let’s 
+            have a deep dive into the Rubix-ML library.</b></p>
+        <p id="p6"><b># Rubix-ML Library – </b></p>
+        <p id="p7"><b>Rubix-ML is a high-level Machine Learning Library in PHP which has over 40+ ML libraries for supervised and 
+            unsupervised machine learning. It is open source and free to use commercially. Below is the link provided for Rubix-ML 
+            library:</br></br>
+        <a href="https://rubixml.com/" style="text-decoration: none;color: green;padding: 10px;background-color: white;
+                border: 5px solid black;border-radius: 30px;margin-left: 590px;">
+            rubixml.com</a></b></p>
+        <p id="p8"><b>Since we are using supervised machine learning technique, we now need to implement a supervised machine learning 
+            algorithm. There are lot of Supervised ML algorithms available in Rubix-ML library, but the most apt algorithm which I found 
+            corresponding to our dataset is K-Nearest Neighbors (K-NN). For those who don’t know let me first explain what is K-NN…</b></p>
+        <p id="p9"><b># K-NN Algorithm -</b></p>
+        <p id="p10"><b>K-NN algorithm assumes the similarity between the new case/data and available cases and put the new case into the 
+            category that is most similar to the available categories.</b></p>
+        <ul type="disc" id="ul1">
+            <li>K-NN algorithm stores all the available data and classifies a new data point based on the similarity. This means 
+                when new data appears then it can be easily classified into a well suite category by using K-NN algorithm.</li>
+            <li>Let us understand this through below diagram:</li>
+        </ul>
+        <img src="images/knn.jpg" id="img2">
+        <p id="p11"><b>But why KNN?</b></p>
+        <ul type="disc" id="ul2">
+            <li>The KNN algorithm will be very effective as according to our dataset we are dealing with the categorical data points. 
+                The model representation for KNN is the entire training dataset.</li>
+            <li>Predictions will be made for a new data point by searching through the entire training set for the K most similar 
+                instances (the neighbors) and summarizing the output variable for those K instances.</li>
+            <li>The technique uses the attributes which are of the same scale using it to calculate the Nearest Neighbors, a binary 
+                number you can calculate directly based on the differences between each input variable.</li>
+            <li>For instance, if we provide real time data to our ML model (e.g. a testing dataset of heat exchanger) then based on the 
+                trained values, it will find the nearest possible outcome by calculating the Hamming distance to the possible category 
+                of outcome. </li>
+        </ul>
+        <p id="p12"><b>So, now we understand our K-NN Algorithm, let’s study about the Kernel Distance which we will be using in our algorithm.</b></p>
+        <p id="p13"><b># Kernel Distance (Hamming Distance) -</b></p>
+        <p id="p14"><b>The key aspect of the kernel distance is its interpretation as a distance between probability measure. Given two 
+            objects A and B, and a measure of similarity between them given by K (A, B), then the induced distance between A and B can be 
+            defined as the difference between the self-similarities K (A, A) + K (B, B) and the cross-similarity K (A, B). For example, 
+            take two strings of same length:</br></br> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1)	Roller &nbsp;&nbsp; 2) Wagner
+            </b></p>
+        <p id="p15"><b>Now if we compare two strings character by character then,
+            First four characters from both the strings does not match but after that the remaining two characters matches from both the
+            strings.</b></p>
+        <p id="p16"><b>Hence, the Hamming Distance between the two strings will be 4.</b></p>
+        <p id="p17"><b>Similarly, if we take two strings from our Heat Exchanger Dataset for Efficiency:</br></br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1)	L_Efficiency &nbsp;&nbsp; 2) M_Efficiency
+            </b></p>
+        <p id="p18"><b>If we compare these two strings character by character then except first two characters both the words match for 
+            rest of the characters. Hence, the hamming distance will be 2. Less is the hamming distance more is the accuracy of our ML 
+            model.</b></p>
+        <p id="p19"><b>For more information on Kernel Distance refer below link:</br></br>
+        <a href="https://www.cs.utah.edu/~jeffp/papers/gentleintroKD.pdf" style="text-decoration: none;color: green;padding: 10px;background-color: white;
+        border: 5px solid black;border-radius: 30px;margin-left: 490px;">Research Paper on Kernel Distance</a></b></p>
+        <p id="p20"><b>There are different types of Kernel Distance available for Categorical Data and Non-Categorical Data. Since we 
+            are working on Categorical Data, we need to use Distance Kernel for Categorical Data. </b></p>
+        <p id="p21"><b>Now, since we are using K-NN Algorithm and as we are working on the Categorical Data, the most appropriate 
+            Distance Kernel is the Hamming Distance Kernel. </b></p>
+        <p id="p22"><b>For more information on Hamming Distance Metric refer below link:</br></br>
+        <a href="https://papers.nips.cc/paper/2012/file/59b90e1005a220e2ebc542eb9d950b1e-Paper.pdf" style="text-decoration: none;color: green;padding: 10px;background-color: white;
+        border: 5px solid black;border-radius: 30px;margin-left: 433px;">Research Paper on Hamming Distance Metric</a></b></p>
+        <p id="p23"><b>But why to use Distance Metric when we are using K-NN?</b></p>
+        <p id="p24"><b>The answer is quite simple, as K-NN work on feature matching, Distance Metric will help find the data points 
+            with similar feature and then by using the K-NN concept of nearest neighbors we can find the most suitable/nearest group 
+            of data point which matches with the input data. </b></p>
+        <p id="p25"><b>So now, we are all set and done with the Dataset and the Algorithm part, let’s have a deep dive into the coding part of our model.</b></p>
+    </div>
+    <div class="code" id="code">
+        <h1>PHP Machine Learning Code:</h1>
+        <p id="p1"><b>Hey folks, till now I have discussed all the aspects related to our project but still I have not answered your question 
+            which is, Why I chose PHP over Python?</b></p>
+        <p id="p2"><b>The reason being PHP is a server-side object-oriented programming language which is obviously meant for web-based 
+            application. Being server-side, its execution is very fast as compared to Python which is a scripting language. Moreover, 
+            when we are dealing with large amount of live data it is very important that the processing of data is fast and consistent 
+            which is provided by PHP. Also, PHP is able to run on many platforms but Python has its limitation on working on different 
+            platforms. Another important reason being PHP broadly supports database connectivity but on other hand Python has its 
+            limitation again when comes to database connectivity.</b></p>
+        <p id="p3"><b>Here, in my project for Smart India Hackathon, which is Asset Performance Management, I proposed a Web Based Approach for implementing ML 
+            model. So, adhering to all such reasons I chose PHP over Python.</b></p>
+        <p id="p4"><b>I hope you are satisfied with this explanation about why I chose PHP over Python. Again, these are my personal 
+            views as it may differ from person to person depending on project requirement.</b></p>
+        <p id="p5"><b>So, let’s get started writing the ML code in PHP. Writing ML code in PHP is very easy as it takes just 5 lines of 
+            code using Rubix-ML library.</b></p>
+        <p id="p6"><b>*Note – For using Rubix-ML PHP Library we need PHP Version 7.4 and later.</b></p>
+        <p id="p7"><b>First to begin with, consider we need to predict the efficiency of our asset which is heat exchanger.</b></p>
+        <p id="p8"><b>#Code for Predicting Efficiency of Heat Exchanger –</b></p>
+        <img src="images/php.jpg" id="img1">
+        <p id="p9"><b>Okay folks, now let me explain you the code step by step…</b></p>
+        <p id="p10"><b>Now every machine learning project requires some libraries and packages to work with data and to implement the 
+            algorithms. Likely, we need to import some packages/class from Rubix-ML library into our ML model.</b></p>
+        <p id="p11"><b>*Note -  Since, PHP is OOP language we sometimes refer packages as Class.</b></p>
+        <p id="p12"><b>The libraries are:</b></p>
+        <p id="p14"><b>a) include __DIR__ . '/vendor/autoload.php'; – </b></p>
+        <p id="p15"><b>This is basically not a library but a Composer. Composer is an application-level package manager for the PHP 
+            programming language that provides a standard format for managing dependencies of PHP software and required libraries.</b></p>
+        <p id="p16"><b>b) use Rubix\ML\Datasets\Labeled; -</b></p>
+        <p id="p17"><b>Now we import the <i>Datasets</i> package for importing our dataset into algorithm and manipulating with our dataset. 
+            This package consists of a Class named <i>Labeled</i> which has predefined methods for working with the labeled dataset.</b></p>
+        <p id="p18"><b>c) use Rubix\ML\Extractors\CSV; -</b></p>
+        <p id="p19"><b>Although we have used the <i>Dataset</i> package for manipulating with the dataset but it is only possible when we import
+            the dataset into our algorithm in a proper format. So, we need to use the <i>Extractors</i> package. Extractors are iterators that 
+            let you loop over the records of a dataset in storage and can be used to instantiate a dataset object using the <i>fromIterator()</i> 
+            method. Similarly, our dataset should be in the CSV format when using it in our ML model. Thus, <i>Extractors</i> package also consists of 
+            <i>CSV</i> Class which automatically converts dataset files into CSV format. CSV files have the advantage of being able to be processed line 
+            by line. Thus, all CSV data are imported as categorical type (strings) by default.</b></p>
+        <p id="p20"><b>d) use Rubix\ML\Classifiers\KNearestNeighbors; -</b></p>
+        <p id="p21"><b>Till now we have imported the dataset, now we need to import the algorithm package which we are going to implement in our 
+            code. Since, we are performing Classification in our model we need to import the <i>Classifiers</i> package which has the <i>KNearestNeighbors</i> 
+            Algorithm.
+            So now, we have imported the <i>Classifiers</i> Class which means now we can apply K-NN on our dataset.
+            </b></p>
+        <p id="p22"><b>e) use Rubix\ML\Kernels\Distance\Hamming; - </b></p>
+        <p id="p23"><b>After importing the Classifiers package we can now work on our algorithm but still the Distance Kernel part is unknown to 
+            our K-NN algorithm based on which it is going to calculate the nearest neighbor. So, for that we import the <i>Kernels</i> package which 
+            consists of the <i>Distance</i> package where tons of Distance metrics are available. Since we are working with the categorical data we need 
+            to import the corresponding metrics. So, we import the <i>Hamming Distance</i> Metric for our ML code.
+            </b></p>
+        <p id="p24"><b>f) use Rubix\ML\CrossValidation\Metrics\Accuracy; -</b></p>
+        <p id="p25"><b>Now coming to the last package which is <i>CrossValidation</i>. Generally, CrossValidation techniques are used for evaluating 
+            ML models. Evaluating in the sense measuring the accuracy of our ML model on different parameters based on different subsets of data. 
+            Here in our ML model we are just going to measure the accuracy of our Algorithm on our provided Testing Dataset.</b></p>
+        <p id="p26"><b>Now coming to the actual code let’s explore it step by step…</b></p>
+        <p id="p27"><b>*Note – 1) Comments in PHP are represented using ‘//’.</b></p>
+        <p id="p28"><b>2) To display output in PHP the syntax is:</b></p>
+        <p id="p29"><b>echo ‘write_your_output_code/sentence_here’</b></p>
+        <p id="p30"><b> 3)	In PHP variable is declared using ‘$’ symbol</b></p>
+        <p id="p31"><b>Step 1) Loading Dataset into Algorithm:</b></p>
+        <p id="p32"><b>Code:</b></p>
+        <p id="p33" style="text-decoration: none;color: blueviolet;padding: 10px;background-color: white;
+        border: 5px solid black;border-radius: 30px;"><b>$dataset = Labeled::fromIterator(new CSV('heat_efficiency.csv'));</b></p>
+        <p id="p34"><b>Here, I have declared one variable named <i>dataset</i> which will store our imported dataset which is for Efficiency 
+            of Heat Exchanger. The object of the Class <i>CSV</i> is instantiated by using the new keyword. The new Keyword is followed by 
+            extractor named <i>CSV()</i>, in this extractor we need to pass the path of our required dataset and then it will convert it into 
+            CSV format. But only storing the dataset is not enough as we even want to work with the records present in that dataset. So, 
+            we need to use the Class <i>Labeled</i> which consists of method named <i>fromIterator()</i> which iterates over each record from the 
+            dataset. We can use this method <i>fromIterator()</i> from Class <i>Labeled</i> by using a scope resolution operator.   </b></p>
+        <p id="p35"><b>Step 2) Splitting the dataset into training and testing dataset:</b></p>
+        <p id="p36"><b>Code:</b></p>
+        <p id="p37" style="text-decoration: none;color: blueviolet;padding: 10px;background-color: white;
+        border: 5px solid black;border-radius: 30px;"><b>[$training, $testing] = $dataset-> stratifiedSplit(0.7);</b></p>
+        <p id="p38"><b>Here, again I have declared two variables named <i>training</i> and <i>testing</i> which will store the respective dataset after 
+            split, which will be operated on our imported dataset. For splitting the dataset, we use the predefined method named 
+            <i>stratifiedSplit</i> which takes one argument as input which is obviously the splitting factor for dataset. It takes argument 
+            values between 0 and 1. As discussed earlier, I am going to split the dataset into 70:30 ratio. Thus, I passed 0.7 as an 
+            argument to the method. Here, by default it assumes that if we are working with two variables then the splitting will be 
+            done accordingly. Thus, it splits our <i>dataset</i> into 70% for training and 30% for testing. That’s actually the power of 
+            Rubix-ML library.</b></p>
+        <p id="p39"><b>Step 3) Applying estimator i.e. the K-NN Algorithm to the ML model:</b></p>
+        <p id="p40"><b>Code:</b></p>
+        <p id="p41" style="text-decoration: none;color: blueviolet;padding: 10px;background-color: white;
+        border: 5px solid black;border-radius: 30px;"><b>$estimator = new KNearestNeighbors(2, true, new Hamming(2));</b></p>
+        <p id="p42"><b>Hey folks, now coming to the interesting part which is applying the machine learning algorithm or you can say 
+            estimator for our ml model. Here, I have declared a variable named <i>estimator</i> which will be storing the ML parameters and Class 
+            i.e. Algorithm that we are going to use in our model. So, by using new keyword the object of the Class <i>K-NN</i> is instantiated 
+            and now we can use our algorithm. Since we are going for K-NearestNeighbors we need to use the <i>KNearestNeighbors</i> Class. The 
+            <i>KNearestNeighbors</i> have different parameters. The first parameter is the value of nearest neighbor which we will consider for 
+            our ML model. The value generally depends on the dataset we are using and the user. Here I choose <i>2</i> as the parameter of 
+            nearest neighbor since we are working on three categories of values i.e. 1) L_Efficiency, 2) M_Efficiency and 
+            3) H_Efficiency. It literally means that whenever a new data point will be entered the K-NN algorithm will search for 
+            2 Nearest or likely same data point/group where the entered data point suits perfectly. We cannot choose nearest parameter 
+            greater than 3 as it will cause ambiguity while the algorithm searches for likely same data point. The second parameter is 
+            the Boolean value which is set to <i>true</i>. It literally means that the algorithm has to consider the distances of nearest 
+            neighbors while making predictions. The third parameter which is really important is the Distance Metric. As discussed 
+            earlier, we are using the <i>Hamming Distance Metric</i>. So, we need to create the object of <i>Hamming Distance</i> Class with new keyword to 
+            instantiate it. It takes a parameter for measuring the distance. Here I have passed 2 as a parameter as we have discussed 
+            earlier in the Kernel Distance section.</b></p>
+        <p id="p43"><b>Step 4) Training/Fitting the Algorithm with Training Dataset:</b></p>
+        <p id="p44"><b>Code:</b></p>
+        <p id="p45" style="text-decoration: none;color: blueviolet;padding: 10px;background-color: white;
+        border: 5px solid black;border-radius: 30px;"><b>$estimator->train($training);</b></p>
+        <p id="p46"><b>Now comes the fun part, here our model is ready to be trained. Here, we apply <i>train</i> method on the training 
+            variable which earlier had stored the <i>Training</i> Dataset. But how the algorithm is going to be trained for the dataset. 
+            For that we make the variable <i>estimator</i> to apply on the <i>training</i> variable using the <i>train</i> method. Variable <i>estimator</i> had 
+            stored the pattern building algorithm and parameters to apply on the dataset. Thus, we have trained our ML model on our 
+            Dataset for particular patterns.</b></p>
+        <p id="p47"><b>Step 5) Testing/Predicting the Trained Algorithm on Testing Dataset:</b></p>
+        <p id="p48"><b>Code:</b></p>
+        <p id="p49" style="text-decoration: none;color: blueviolet;padding: 10px;background-color: white;
+        border: 5px solid black;border-radius: 30px;"><b>$predictions = $estimator->predict($testing); </b></p>
+        <p id="p50"><b>Until now, we have trained our ML model on the <i>training</i> dataset. Now it’s time to predict the output or test the 
+            patterns learnt by our ML model. For that I have declared another variable named <i>predictions</i> which will store the predicted 
+            datapoints from the testing dataset. But how it will predict? For that we need to use the <i>predict</i> method which will work on 
+            our <i>testing</i> dataset. But still the <i>predict</i> method don’t know how to predict. For that we need to apply the <i>estimator</i> on 
+            <i>predict</i> method as it stores the learned pattern and parameters for the ML model. Based on the learned patterns the <i>predict</i> 
+            method will make predictions from the <i>testing</i> dataset and it will store it in the variable named <i>predictions</i>.</b></p>
+        <p id="p51"><b>Step 6) Printing the Predicted values:</b></p>
+        <p id="p52"><b>Code:</b></p>
+        <p id="p53" style="text-decoration: none;color: blueviolet;padding: 10px;background-color: white;
+        border: 5px solid black;border-radius: 30px;"><b>$output = array_slice($predictions, 0, 5);</b></p>
+        <p id="p54"><b>After we have tested/predicted the values from the <i>testing</i> dataset, the algorithm will store the predicted values 
+            in the form of arrays. As the algorithm is working on the complete dataset it will predict value for each group of data points. 
+            Therefore, we need to restrict or choose limited values of output for better insights. Here, I have used the 
+            <i>array_slice</i> method to limit the output values. It takes three parameters, first one is the <i>predictions</i> variable which has 
+            stored the predicted values, the second and third parameter is the starting index and ending index of the array. Since I want 
+            first five output values so I choose starting index as 0 and ending index as 5. Finally, the first 5 predicted values are stored in 
+            the variable named <i>output</i>.</b></p>
+        <p id="p55"><b>Step 7) Finding the Accuracy of our ML Model:</b></p>
+        <p id="p56"><b>Code:</b></p>
+        <p id="p57" style="text-decoration: none;color: blueviolet;padding: 10px;background-color: white;
+        border: 5px solid black;border-radius: 30px;"><b>$metric = new Accuracy();</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$score &nbsp;= &nbsp;$metric->score($predictions, $testing->labels());
+            </b></p>
+        <p id="p58"><b>Now coming into the endgame is to find how accurate our ML model worked on the <i>testing</i> dataset. For that we need to use 
+            the predefined <i>Accuracy</i> Class which will find the accuracy of our ML model. So, I instantiate the object of that class using the new 
+            keyword and stored it in the variable named <i>metric</i>. Now here comes the fun part, measuring accuracy of the model means the number of 
+            classifications a model correctly predicts divided by the total number of predictions made. Here, we need not do the calculations as 
+            the <i>Accuracy</i> class has predefined method named <i>score</i> which will do the complex stuff. Scoring is also called prediction, and is the 
+            process of generating values based on a trained machine learning model, given some new input data (testing data). Now, the score 
+            method takes two parameters i.e. the tested data points and the corresponding parameters based on which it has generated the result. 
+            So, I have passed <i>predictions</i> variable as a first parameter which holds the patterns tested on dataset and similarly the second 
+            variable named <i>testing</i> which holds the <i>testing</i> dataset, is now applied on the <i>labels</i> method. The <i>labels</i> method generally holds the 
+            output value provided by the user while training. Thus, it now cross-validates the generated data with the provided data when we 
+            apply the <i>Accuracy</i> class stored in variable <i>metrics</i>.</b></p>
+        <p id="p59"><b>Step 8) Converting the Score into User format:</b></p>
+        <p id="p60"><b>Code:</b></p>
+        <p id="p61" style="text-decoration: none;color: blueviolet;padding: 10px;background-color: white;
+        border: 5px solid black;border-radius: 30px;"><b>echo 'Accuracy of the model is ' . (string) ($score * 100.0) . '%' . PHP_EOL;</b></p>
+        <p id="p62"><b>This line of code does not do any complex task but just converts the score into user format. As the score generated in 
+            the previous step was lying between 0 and 1, we convert it into percent form by multiplying it with 100 thus making it more user 
+            understandable. It fairly depends on the user whether to convert it or not.</b></p>
+        <p id="p63"><b>And Voila!!! We have completed our ML Model here.</b></p>
+        <p id="p64"><b>Now, you might be thinking what about the remaining datasets i.e. the Heat Exchanger Reliability and Status. 
+            Don’t worry it’s not a tedious task, you just need to replace the <i>heat_efficiency</i> dataset with the <i>heat_reliability</i> and 
+            <i>heat_status</i> datasets, remaining the ML model will perform the same task for both the datasets.</b></p>
+        <p id="p65"><b>Until here, we have just performed the machine learning stuff where we got to know about the predictions based on 
+            the datasets provided. But this stuff is very boring as just a piece of data is predicted for an instance. Now, if we want to 
+            know how the data of heat exchanger is behaving for the complete dataset then we need to explore the dataset. Yes! You guessed 
+            it right, we are going to do Data Exploration with Visualization.</b></p>
+        <p id="p66"><b>Just going off-track a bit, how many of you have watched the movie Drishyam? What does this movie convey? The movie 
+            conveys the fact that, Visual Memories are the strongest memories which helps faster communication of data with better understanding.</b></p>
+        <p id="p67"><b>So, let’s have a Drishyam now (I mean Data Visualization)... 😅😅</b></p>
+    </div>
+    <div class="visual" id="visual">
+        <h1>Data Visualization</h1>
+        <p id="p1"><b>For Data Visualization, you can use any of your favorite plotting software where you just need to import the "dataset.csv" file into it.</b></p>
+        <p id="p2"><b>Here I have done this work using JavaScript library named Canvas as I have developed this entire project for Web Based Application perspective.</b></p>
+        <p id="p3"><b>*Note – Data is explained for different conditions based on the dataset I have used.</b></p>
+        <p id="p4"><b>1)	Heat Exchanger Efficiency Line Graph:</b></p>
+        <p id="p5"><b>I have plotted the Line Graph between the Efficiency values of Heat Exchanger over time for different values of data. You can refer the dataset discussed earlier.</b></p>
+        <img src="images/graph1.jpg" id="img1">
+        <p id="p6"><b>This graph shows the behavior of Heat Exchanger’s Efficiency over different set of data points. We can see that the Efficiency 
+            of the asset is High somewhere whereas it is low or you can say medium somewhere. Over set of data points the efficiency of the 
+            asset is decreasing which means the asset needs to be consider for maintenance.</b></p>
+        <p id="p7"><b>2)Heat Exchanger Reliability Graph:</b></p>
+        <p id="p8"><b>The graph is plotted between fluid flow rate of the asset and the efficiency values for better visualization purpose.</b></p>
+        <img src="images/graph2.jpg" id="img2">
+        <p id="p9"><b>Basically, the asset is said to be reliable if it has less unplanned downtime. Above graph clearly shows that over 
+            the set of datapoints the reliability of asset is increasing a bit and then it takes a steep fall which means the asset is 
+            not reliable over the period of time. </b></p>
+        <p id="p10"><b>3)Heat Exchanger Reliability Histogram:</b></p>
+        <p id="p11"><b>The Histogram is plotted between the Reliability Categories of Heat Exchanger over different values of Fluid Flow 
+            Rate for better Data Visualization.</b></p>
+        <img src="images/graph3.jpg" id="img3">
+        <p id="p12"><b>Clearly, we can see that for most of the time the Heat Exchanger showed Medium Reliability and Low Reliability 
+            whereas there were very few moments where our asset was Highly Reliable. Thus, we can clearly conclude that our asset needs 
+            to be consider for maintenance. Unless it will cause unplanned downtime and will increase the operating costs.</b></p>
+        <p id="p13"><b>*Note -  We can plot the above visualizations based on several different parameters.</b></p>
+        <p id="p14"><b>4)Machine Learning Prediction:</b></p>
+        <p id="p15"><b>Until now we have seen what the data points said from our dataset using the Data Visualization Technique. But the 
+            most important part of our ML model which is prediction of output result is left. I know you all are excited about the 
+            predicted result. That’s why I kept it for later part.</b></p>
+        <p id="p16"><b>So, let’s have a look at the below diagram: </b></p>
+        <img src="images/graph4.jpg" id="img4">
+        <p id="p17"><b>After clicking on Assess button our asset showed prediction as Medium Efficiency, Low Reliability and was Less 
+            Stable. So, as you can see that it is quite a proof for our Data Visualization results where it showed the same results. 
+            That’s the reason why I lastly revealed the predicted output of our ML model. After checking the accuracy of our model, it 
+            showed 91% accuracy which is quite acceptable for K-NN ML model.</b></p>
+        <p id="p18"><b>I know a lot can be done with this dataset and actually lot of things are still left to explore in this ML model. 
+            This ML model was basically based on the hardcoded datasets but actually when we will be working with the live data using the 
+            IoT sensors the analysis will be more accurate.</b></p>
+        <p id="p19"><b>I hope you discovered some new stuff today and loved my work.
+            So, as you can see it’s actually quite fun performing machine learning in PHP and a lot needs to be discovered from the same.
+            </b></p>
+        <p id="p20"><b>If you want to refer to the Datasets, Code and Visualizations used in this blog, then head over to my github repository by clicking below link.</b></p>
+        <p id="p21" style="text-decoration: none;color: green;padding: 10px;background-color: white;
+        border: 5px solid black;border-radius: 30px;"><b><a href="https://github.com/PrathameshVarhadpande/Machine-Learning-Model-For-Asset-Performance-Management-in-PHP"
+         style="text-decoration: none;color: green;" >GitHub Repository</a></b></p>
+        <p id="p22"><b>I hope you enjoyed the PHP Machine Learning Journey!!</b></p>
+        <p id="p23"><b>Thankyou. Stay Safe and Happy Learning!!!</b></p>
+    </div>
+    <div class="footer">
+        <i class="fas fa-copyright" style="color: white;margin-top: 10px;margin-left: 640px;position: absolute;"></i>
+        <p id="p1"><b>Prathamesh R. Varhadpande</b></p>
+        <a href="https://www.instagram.com/prathamesh.varhadpande/?hl=en"><img src="images/instagram.png" id="insta"></a>
+        <a href="https://www.linkedin.com/in/prathamesh-varhadpande-b23711173"><img src="images/linkedIn.png" id="linked"></a>
+        <a href="mailto:prvarhadpande@gmail.com"><img src="images/gmail.png" id="gmail"></a>
+        <a href="https://github.com/PrathameshVarhadpande/Machine-Learning-Model-For-Asset-Performance-Management-in-PHP"><img src="images/github1.png" id="gh"></a>
+    </div>
+</div>
+</body>
+</html>
