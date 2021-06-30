@@ -1,0 +1,2172 @@
+*{
+    margin: 0px;
+    padding: 0px;   
+}
+.homescreen{
+    min-width: 360px;
+    min-height: 640px;
+    width: 1518px;    
+    height: 752px;
+    position: absolute;
+}
+.homescreen img{
+    width: 1518px;
+    height: 752px;
+}
+.overlay{
+    width: 1518px;
+    height: 752px;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    position: absolute;
+}
+.overlay #logo{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 170px;
+    height: 130px;
+    border-radius: 60px;
+    position: absolute;
+}
+.overlay h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-left: 260px;
+    text-align: center;
+    color:white;
+    text-shadow: 0 0 6px gold;
+    position: absolute;
+}
+.overlay #myphoto{
+    border-radius: 360px;
+    width: 230px;
+    height: 230px;
+    margin-top: 220px;
+    margin-left: 620px;
+    position: absolute;
+}
+.overlay p{
+    font-size: 25px;
+    margin-top: 500px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    position: absolute;
+}
+.overlay #insta{
+    margin-top: 650px;
+    margin-left: 580px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+.overlay #linked{
+    margin-top: 650px;
+    margin-left: 670px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+.overlay #gmail{
+    margin-top: 650px;
+    margin-left: 760px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+.overlay #gh{
+    margin-top: 650px;
+    margin-left: 850px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 360px;
+}
+.sidemenu{
+    margin-top: 250px;
+    width:500px;
+    height: 500px;
+    position: fixed;
+    z-index: 999;
+}
+.sidemenu ul{
+    display: block;
+}
+.sidemenu ul li{
+    display: block;
+    background-color: white;
+    width: 35px;
+    overflow: hidden;
+    border: 1px solid white;
+    border-left: none;
+    height: 40px;
+}
+.sidemenu ul li:hover{
+    background-color:green;
+    width: 400px;
+    overflow:visible;
+    border: 1px solid white;
+    border-left: none;
+    display: block;
+}
+.sidemenu ul a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    height: 30px;
+    font-size: 20px;
+    padding: 6px;
+    overflow: hidden;
+    font-family:'Nunito', sans-serif ;
+}
+.intro{
+    background-color: green;
+    margin-top: 753px;
+    width: 1518px;
+    height: 660px;
+    position: absolute;
+}
+.intro h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-left: 660px;
+    text-align: center;
+    color:white;
+    text-shadow: 0 0 8px black;
+    position: absolute;
+}
+.intro #p1{
+    margin-top: 90px;
+    margin-left: 50px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.intro #p2{
+    margin-top: 240px;
+    margin-left: 50px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.intro #p3{
+    margin-top: 320px;
+    margin-left: 50px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.intro #p4{
+    margin-top: 370px;
+    margin-left: 50px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.intro #p5{
+    margin-top: 555px;
+    margin-left: 50px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.apm{
+    background-color: green;
+    margin-top: 1414px;
+    width: 1518px;
+    height: 580px;
+    position: absolute;
+}
+.apm h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-left: 390px;
+    text-align: center;
+    color:white;
+    text-shadow: 0 0 8px black;
+    position: absolute;
+}
+.apm #p1{
+    margin-top: 90px;
+    margin-left: 50px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.apm #p2{
+    margin-top: 240px;
+    margin-left: 50px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.apm #p3{
+    margin-top: 430px;
+    margin-left: 50px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.apm #p4{
+    margin-top: 508px;
+    margin-left: 50px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.heat{
+    background-color: green;
+    margin-top: 1996px;
+    width: 1518px;
+    height: 1170px;
+    position: absolute;
+}
+.heat h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-left: 575px;
+    text-align: center;
+    color:white;
+    text-shadow: 0 0 8px black;
+    position: absolute;
+}
+.heat #p1{
+    margin-top: 90px;
+    margin-left: 50px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.heat img{
+    margin-top: 250px;
+    margin-left: 510px;
+    width: 500px;
+    height: 270px;
+    border-radius: 60px;
+    position: absolute;
+    box-shadow: 0 10px 0 0 black;
+}
+.heat #p2{
+    margin-top: 560px;
+    margin-left: 50px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.heat #p3{
+    margin-top: 610px;
+    margin-left: 60px;
+    margin-right: 20px;
+    font-size: 27px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    padding: 4px;
+    background-color: black;
+    border-radius: 30px;
+    text-indent: 10px;
+    color: white;
+    position: absolute;
+}
+.heat ol{
+    margin-top: 670px;
+    margin-left: 150px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;    
+    color: white;
+    position: absolute;
+}
+.heat #p4{
+    margin-top: 1000px;
+    margin-left: 50px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.heat #p5{
+    margin-top: 1060px;
+    margin-left: 50px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.mindmap{
+    background-color: green;
+    margin-top: 3168px;
+    width: 1518px;
+    height: 780px;
+    position: absolute;
+}
+.mindmap h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-left: 575px;
+    text-align: center;
+    color:white;
+    text-shadow: 0 0 8px black;
+    position: absolute;
+}
+.mindmap iframe{
+    margin-top: 120px;
+    margin-left: 100px;
+    width: 1310px;
+    height: 580px;
+    position: absolute;
+}
+.process{
+    background-color: green;
+    margin-top: 3950px;
+    width: 1518px;
+    height: 1060px;
+    position: absolute;
+}
+.process h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-left: 635px;
+    text-align: center;
+    color:white;
+    text-shadow: 0 0 8px black;
+    position: absolute;
+}
+.process #p1{
+    margin-top: 110px;
+    margin-left: 50px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.process img{
+    margin-top: 200px;
+    margin-left: 100px;
+    width: 1310px;
+    height: 720px;
+    position: absolute;
+    border: 5px solid;
+}
+.process #p2{
+    margin-top: 960px;
+    margin-left: 50px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.dataset{
+    background-color: green;
+    margin-top: 5012px;
+    width: 1518px;
+    height: 5030px;
+    position: absolute;
+}
+.dataset h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-left: 495px;
+    text-align: center;
+    color:white;
+    text-shadow: 0 0 8px black;
+    position: absolute;
+}
+.dataset #p1{
+    margin-top: 110px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.dataset #p2{
+    margin-top: 190px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.dataset #p3{
+    margin-top: 310px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.dataset #p4{
+    margin-top: 400px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.dataset #p5{
+    margin-top: 720px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.dataset #img1{
+    margin-top: 780px;
+    margin-left: 100px;
+    width: 1310px;
+    height: 670px;
+    position: absolute;
+    border: 5px solid;
+}
+.dataset #p6{
+    margin-top: 1490px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.dataset #p7{
+    margin-top: 1610px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.dataset #p8{
+    margin-top: 1700px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.dataset #p9{
+    margin-top: 1790px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.dataset #p10{
+    margin-top: 2220px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.dataset #head1{
+    margin-top: 2290px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 20px;
+    color: white;
+    position: absolute;
+    padding: 5px;
+    padding-right: 25px;
+    border-radius: 30px;
+    background-color: black;
+}
+.dataset #img2{
+    margin-top: 2360px;
+    margin-left: 100px;
+    width: 1310px;
+    height: 670px;
+    position: absolute;
+   
+}
+.dataset #head2{
+    margin-top: 3070px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 20px;
+    color: white;
+    position: absolute;
+    padding: 5px;
+    padding-right: 25px;
+    border-radius: 30px;
+    background-color: black;
+}
+.dataset #img3{
+    margin-top: 3150px;
+    margin-left: 100px;
+    width: 1310px;
+    height: 670px;
+    position: absolute;
+    
+}
+.dataset #head3{
+    margin-top: 3870px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 20px;
+    color: white;
+    position: absolute;
+    padding: 5px;
+    padding-right: 25px;
+    border-radius: 30px;
+    background-color: black;
+}
+.dataset #img4{
+    margin-top: 3950px;
+    margin-left: 100px;
+    width: 1310px;
+    height: 670px;
+    position: absolute;
+    
+}
+.dataset #p11{
+    margin-top: 4660px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.dataset #p12{
+    margin-top: 4710px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.dataset #p13{
+    margin-top: 4795px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.dataset #p14{
+    margin-top: 4915px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.ml{
+    background-color: green;
+    margin-top: 10044px;
+    width: 1518px;
+    height: 4660px;
+    position: absolute; 
+}
+.ml h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-left: 95px;
+    text-align: center;
+    color:white;
+    text-shadow: 0 0 8px black;
+    position: absolute;   
+}
+.ml #p1{
+    margin-top: 110px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.ml #p2{
+    margin-top: 160px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.ml #p3{
+    margin-top: 282px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.ml #img1{
+    margin-top: 390px;
+    margin-left: 100px;
+    width: 1310px;
+    height: 670px;
+    position: absolute;
+    
+}
+.ml #p4{
+    margin-top: 1102px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.ml #p5{
+    margin-top: 1192px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.ml #p6{
+    margin-top: 1292px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+    color: white;
+    position: absolute;
+    padding: 7px;
+    background-color: black;
+    border-radius: 30px;
+}
+.ml #p7{
+    margin-top: 1372px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.ml #p8{
+    margin-top: 1602px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.ml #p9{
+    margin-top: 1782px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+    color: white;
+    position: absolute;
+    padding: 7px;
+    background-color: black;
+    border-radius: 30px;
+}
+.ml #p10{
+    margin-top: 1860px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.ml #ul1{
+    margin-top: 1960px;
+    margin-left: 120px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;    
+    color: white;
+    position: absolute;
+}
+.ml #img2{
+    margin-top: 2110px;
+    margin-left: 300px;
+    width: 900px;
+    height: 470px;
+    position: absolute;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+.ml #p11{
+    margin-top: 2650px;
+    margin-left: 60px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+    color: white;
+    position: absolute;
+    padding: 7px;
+    padding-right: 10px;
+    background-color: black;
+    border-radius: 30px;
+}
+.ml #ul2{
+    margin-top: 2720px;
+    margin-left: 140px;
+    margin-right: 50px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;    
+    color: white;
+    position: absolute;
+}
+.ml #p12{
+    margin-top: 3060px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.ml #p13{
+    margin-top: 3170px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+    color: white;
+    position: absolute;
+    padding: 7px;
+    background-color: black;
+    border-radius: 30px;
+}
+.ml #p14{
+    margin-top: 3250px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.ml #p15{
+    margin-top: 3480px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.ml #p16{
+    margin-top: 3560px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.ml #p17{
+    margin-top: 3610px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.ml #p18{
+    margin-top: 3750px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.ml #p19{
+    margin-top: 3870px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.ml #p20{
+    margin-top: 4010px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.ml #p21{
+    margin-top: 4090px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.ml #p22{
+    margin-top: 4170px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.ml #p23{
+    margin-top: 4330px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+    color: white;
+    position: absolute;
+    padding: 7px;
+    padding-right: 10px;
+    background-color: black;
+    border-radius: 30px;
+}
+.ml #p24{
+    margin-top: 4412px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.ml #p25{
+    margin-top: 4532px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code{
+    background-color: green;
+    margin-top: 14706px;
+    width: 1518px;
+    height: 8860px;
+    position: absolute; 
+}
+.code h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-left: 395px;
+    text-align: center;
+    color:white;
+    text-shadow: 0 0 8px black;
+    position: absolute;
+}
+.code #p1{
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p2{
+    margin-top: 180px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p3{
+    margin-top: 400px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p4{
+    margin-top: 485px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p5{
+    margin-top: 570px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p6{
+    margin-top: 655px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p7{
+    margin-top: 706px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p8{
+    margin-top: 776px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+    color: white;
+    position: absolute;
+    padding: 7px;
+    background-color: black;
+    border-radius: 30px;
+}
+.code #img1{
+    margin-top: 866px;
+    margin-left: 260px;
+    width: 1000px;
+    height: 790px;
+    position: absolute;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+.code #p9{
+    margin-top: 1720px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p10{
+    margin-top: 1772px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p11{
+    margin-top: 1860px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p12{
+    margin-top: 1910px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p14{
+    margin-top: 1960px;
+    margin-left: 70px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+    color: white;
+    position: absolute;
+    padding: 7px;
+    background-color: black;
+    border-radius: 30px;
+}
+.code #p15{
+    margin-top: 2030px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p16{
+    margin-top: 2160px;
+    margin-left: 70px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+    color: white;
+    position: absolute;
+    padding: 7px;
+    background-color: black;
+    border-radius: 30px;
+}
+.code #p17{
+    margin-top: 2230px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p18{
+    margin-top: 2330px;
+    margin-left: 70px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+    color: white;
+    position: absolute;
+    padding: 7px;
+    background-color: black;
+    border-radius: 30px;
+}
+.code #p19{
+    margin-top: 2410px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p20{
+    margin-top: 2680px;
+    margin-left: 70px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+    color: white;
+    position: absolute;
+    padding: 7px;
+    background-color: black;
+    border-radius: 30px;
+}
+.code #p21{
+    margin-top: 2760px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p22{
+    margin-top: 2930px;
+    margin-left: 70px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+    color: white;
+    position: absolute;
+    padding: 7px;
+    background-color: black;
+    border-radius: 30px;
+}
+.code #p23{
+    margin-top: 3010px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p24{
+    margin-top: 3220px;
+    margin-left: 70px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+    color: white;
+    position: absolute;
+    padding: 7px;
+    background-color: black;
+    border-radius: 30px;
+}
+.code #p25{
+    margin-top: 3300px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p26{
+    margin-top: 3460px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p27{
+    margin-top: 3520px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p28{
+    margin-top: 3570px;
+    margin-left: 146px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p29{
+    margin-top: 3620px;
+    margin-left: 190px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p30{
+    margin-top: 3670px;
+    margin-left: 146px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p31{
+    margin-top: 3740px;
+    margin-left: 70px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+    color: white;
+    position: absolute;
+    padding: 7px;
+    background-color: black;
+    border-radius: 30px;
+}
+.code #p32{
+    margin-top: 3820px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p33{
+    margin-top: 3880px;
+    margin-left: 330px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p34{
+    margin-top: 3980px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p35{
+    margin-top: 4230px;
+    margin-left: 70px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+    color: white;
+    position: absolute;
+    padding: 7px;
+    background-color: black;
+    border-radius: 30px;
+}
+.code #p36{
+    margin-top: 4320px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p37{
+    margin-top: 4370px;
+    margin-left: 330px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p38{
+    margin-top: 4470px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p39{
+    margin-top: 4750px;
+    margin-left: 70px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+    color: white;
+    position: absolute;
+    padding: 7px;
+    background-color: black;
+    border-radius: 30px;
+}
+.code #p40{
+    margin-top: 4840px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p41{
+    margin-top: 4900px;
+    margin-left: 330px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p42{
+    margin-top: 5010px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p43{
+    margin-top: 5570px;
+    margin-left: 70px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+    color: white;
+    position: absolute;
+    padding: 7px;
+    background-color: black;
+    border-radius: 30px;
+}
+.code #p44{
+    margin-top: 5660px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p45{
+    margin-top: 5720px;
+    margin-left: 330px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p46{
+    margin-top: 5820px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p47{
+    margin-top: 6040px;
+    margin-left: 70px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+    color: white;
+    position: absolute;
+    padding: 7px;
+    background-color: black;
+    border-radius: 30px;
+}
+.code #p48{
+    margin-top: 6130px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p49{
+    margin-top: 6190px;
+    margin-left: 330px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p50{
+    margin-top: 6300px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p51{
+    margin-top: 6585px;
+    margin-left: 70px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+    color: white;
+    position: absolute;
+    padding: 7px;
+    background-color: black;
+    border-radius: 30px;
+}
+.code #p52{
+    margin-top: 6670px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p53{
+    margin-top: 6730px;
+    margin-left: 330px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p54{
+    margin-top: 6840px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p55{
+    margin-top: 7130px;
+    margin-left: 70px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+    color: white;
+    position: absolute;
+    padding: 7px;
+    background-color: black;
+    border-radius: 30px;
+}
+.code #p56{
+    margin-top: 7220px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p57{
+    margin-top: 7280px;
+    margin-left: 330px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p58{
+    margin-top: 7430px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p59{
+    margin-top: 7890px;
+    margin-left: 70px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+    color: white;
+    position: absolute;
+    padding: 7px;
+    background-color: black;
+    border-radius: 30px;
+}
+.code #p60{
+    margin-top: 7975px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p61{
+    margin-top: 8030px;
+    margin-left: 290px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p62{
+    margin-top: 8140px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p63{
+    margin-top: 8260px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p64{
+    margin-top: 8320px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p65{
+    margin-top: 8450px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p66{
+    margin-top: 8620px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.code #p67{
+    margin-top: 8750px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.visual{
+    background-color: green;
+    margin-top: 23569px;
+    width: 1518px;
+    height: 4190px;
+    position: absolute;
+}
+.visual h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-left: 525px;
+    text-align: center;
+    color:white;
+    text-shadow: 0 0 8px black;
+    position: absolute;
+}
+.visual #p1{
+    margin-top: 110px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.visual #p2{
+    margin-top: 190px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.visual #p3{
+    margin-top: 280px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.visual #p4{
+    margin-top: 360px;
+    margin-left: 70px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+    color: white;
+    position: absolute;
+    padding: 7px;
+    background-color: black;
+    border-radius: 30px;
+}
+.visual #p5{
+    margin-top: 450px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.visual #img1{
+    margin-top: 560px;
+    margin-left: 350px;
+    width: 810px;
+    height: 370px;
+    position: absolute;
+    border: 5px solid black;
+}
+.visual #p6{
+    margin-top: 990px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.visual #p7{
+    margin-top: 1140px;
+    margin-left: 70px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+    color: white;
+    position: absolute;
+    padding: 7px;
+    background-color: black;
+    border-radius: 30px;
+}
+.visual #p8{
+    margin-top: 1230px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.visual #img2{
+    margin-top: 1300px;
+    margin-left: 350px;
+    width: 810px;
+    height: 370px;
+    position: absolute;
+    border: 5px solid black;
+}
+.visual #p9{
+    margin-top: 1720px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.visual #p10{
+    margin-top: 1860px;
+    margin-left: 70px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+    color: white;
+    position: absolute;
+    padding: 7px;
+    background-color: black;
+    border-radius: 30px;
+}
+.visual #p11{
+    margin-top: 1940px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.visual #img3{
+    margin-top: 2050px;
+    margin-left: 350px;
+    width: 810px;
+    height: 370px;
+    position: absolute;
+    border: 5px solid black;
+}
+.visual #p12{
+    margin-top: 2470px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.visual #p13{
+    margin-top: 2630px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.visual #p14{
+    margin-top: 2715px;
+    margin-left: 70px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+    color: white;
+    position: absolute;
+    padding: 7px;
+    background-color: black;
+    border-radius: 30px;
+}
+.visual #p15{
+    margin-top: 2800px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.visual #p16{
+    margin-top: 2923px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.visual #img4{
+    margin-top: 3000px;
+    margin-left: 350px;
+    width: 780px;
+    height: 420px;
+    position: absolute;
+    border: 5px solid black;
+}
+.visual #p17{
+    margin-top: 3480px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.visual #p18{
+    margin-top: 3643px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.visual #p19{
+    margin-top: 3773px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.visual #p20{
+    margin-top: 3865px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.visual #p21{
+    margin-top: 3955px;
+    margin-left: 615px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 0px;
+    color: white;
+    position: absolute;
+}
+.visual #p22{
+    margin-top: 4045px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.visual #p23{
+    margin-top: 4105px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+    color: white;
+    position: absolute;
+}
+.footer{
+    background-color: black;
+    margin-top: 27759px;
+    width: 1518px;
+    height: 80px;
+    position: absolute;
+}
+.footer #p1{
+    margin-top: 10px;
+    margin-left: 665px;
+    margin-right: 30px;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    color: white;
+    position: absolute;
+}
+.footer #insta{
+    margin-top: 45px;
+    margin-left: 640px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+.footer #linked{
+    margin-top: 45px;
+    margin-left: 710px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+.footer #gmail{
+    margin-top: 45px;
+    margin-left: 780px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+.footer #gh{
+    margin-top: 45px;
+    margin-left: 850px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 360px;
+}
